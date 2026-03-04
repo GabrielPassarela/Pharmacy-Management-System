@@ -1,26 +1,34 @@
-Pharmacy Management System 
+# Pharmacy Management System 
+
 A web-based pharmacy management system built with Java (MVC architecture) and MySQL, developed as a high school technical project. The app allows users to register and list medications, including details such as name, price, expiration date, prescription type, and description. It also checks expiration status, prescription requirements, and calculates price discounts.
 
- Technologies
+---
+
+##  Technologies
+
 Java • Jakarta Servlet • JSP • MySQL • Maven • HTML • CSS
 
- Getting Started
-Prerequisites
+---
 
-Apache Tomcat 10.1+
-MySQL
-Maven
-Java 21+
+##  Getting Started
 
-Installation
+### Prerequisites
 
-Clone the repository
+- [Apache Tomcat 10.1+](https://tomcat.apache.org/)
+- [MySQL](https://www.mysql.com/)
+- [Maven](https://maven.apache.org/)
+- Java 21+
 
-bash   git clone https://github.com/GabrielPassarela/pharmacy-management.git
+### Installation
 
-Create the database and table in MySQL:
+1. Clone the repository
+   ```bash
+   git clone https://github.com/GabrielPassarela/pharmacy-management.git
+   ```
 
-sql   CREATE DATABASE farmacia;
+2. Create the database and table in MySQL:
+   ```sql
+   CREATE DATABASE farmacia;
 
    USE farmacia;
 
@@ -32,10 +40,11 @@ sql   CREATE DATABASE farmacia;
      tarja VARCHAR(50),
      data_vencimento DATE
    );
+   ```
 
-Create a context.xml file in src/main/webapp/META-INF/ with your database credentials:
-
-xml   <Context>
+3. Create a `context.xml` file in `src/main/webapp/META-INF/` with your database credentials:
+   ```xml
+   <Context>
      <Resource name="bancoFarmacia"
        auth="Container" type="javax.sql.DataSource"
        username="your_user" password="your_password"
@@ -43,19 +52,22 @@ xml   <Context>
        url="jdbc:mysql://localhost:3306/farmacia"
      />
    </Context>
+   ```
 
-Build and deploy the project, then start Tomcat and access:
-
+4. Build and deploy the project, then start Tomcat and access:
+   ```
    http://localhost:8080/FarmaciaTMaven/
+   ```
 
- Screenshots
+---
 
-Coming soon
+##  Author
 
+**Gabriel Passarela**
+[LinkedIn](https://www.linkedin.com/in/gabriel-passarela-70a633326/) • [GitHub](https://github.com/GabrielPassarela)
 
- Author
-Gabriel Passarela
-LinkedIn • GitHub
+---
 
-📄 License
+## 📄 License
+
 This project is for educational purposes.
