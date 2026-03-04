@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #cce0f7;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+h1 {
+
+    text-align: center;
+
+    color: #2c3e50;
+
+    margin-top: 40px;
+
+}
+
+
+
+form {
+
+    background-color: #FFFFFF;  
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+label {
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+
+    color: #34495e;
+
+}
+
+
+
+input[type="text"],
+
+input[type="date"],
+
+input[type="number"] {
+
+    width: 100%;
+
+    padding: 8px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #6673bb;
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+
+input[type="submit"] {
+
+    background-color: #004080;
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border: none;
+
+    font-size: 16px;
+
+}
+
+
+
+input[type="submit"]:hover {
+
+    background-color: #0000a0;
+
+}
+
+
+
+p {
+
+    font-size: 16px;
+
+    color: #2c3e50;
+
+    background-color: #ffffff;
+
+    max-width: 600px;
+
+    margin: 10px auto;
+
+    padding: 12px;
+
+    border-left: 5px solid #004080;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+}
